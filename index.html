@@ -1,77 +1,670 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-responsive" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PIZDA.FUN</title>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <style>
-        html{
-            height: 100%;
-            min-height: 100%;
-            background: url("woman.png") top center no-repeat;
-            background-size: cover;
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            min-height: 100%;
-        }
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide{
-            display: flex;
-        }
-        .swiper-slide img{
-            min-width: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="swiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="1.png" alt="">
+<div class="mobile-additional-content hide">
+
+    <div class="mob-nav-top-line">
+        <div class="adresas">
+            <a href="#">
+                <i class="far fa-phone"></i>
+            </a>
         </div>
-        <div class="swiper-slide">
-            <img src="2.png" alt="">
+        <div class="mail">
+            <a href="#">
+                <i class="far fa-envelope"></i>
+            </a>
         </div>
-        <div class="swiper-slide">
-            <img src="3.png" alt="">
-        </div>
-        <div class="swiper-slide">
-            <img src="4.png" alt="">
+        <div class="adresas">
+            <a href="#">
+                <i class="far fa-map-marker"></i>
+            </a>
         </div>
     </div>
+
+    <div class="mob_search">
+        <a href="#">
+            <i class="far fa-search"></i>
+        </a>
+    </div>
+
+    <div class="langs-select">
+        <select>
+            <option selected value="lt">LT</option>
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+    </div>
+
 </div>
 
-<script>
-    const swiper = new Swiper('.swiper', {
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-        speed: 2500,
-        loop: true,
-        autoplay: {
-            delay: 4000
-        },
-    });
-</script>
+<div id="page">
+    <header>
+        <div class="container">
+            <a class="logo" href="#"></a>
+            <div class="header-content">
+                <div class="header-elements">
+                    <nav class="main-menu-container">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="#" class="start">
+                                    Startas!
+                                </a>
+                            </li>
+                            <li class="selected">
+                                <a href="#">
+                                    Apie mus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Projektai
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DUK
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Kontaktas
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="index-swiper-container">
+            <div class="swiper-container index-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-content">
+                            <div class="cont">
+                                <div>
+                                    <h2 class="t">
+                                        Kurk savo sėkmę su įtikinama marketingo
+                                        <del style="text-decoration: none">strate</del>
+                                        <span style="color: #4c6fff">strategija!</span>
+                                    </h2>
+                                    Aukštos našumo programinės įrangos sprendimai, skatinantys jūsų verslą judėti į
+                                    priekį. Skatink savo naujosios produktų strategijos įgyvendinimą, kad greičiau
+                                    pasiektum savo tikslus.
+                                </div>
+                                <div class="action">
+                                    <a href="#" class="ext_button blue-style rounded">
+                                        <span>
+                                            Startuok čia
+                                        </span>
+                                    </a>
+                                    <a href="#" class="ext_button white-style rounded">
+                                        <span>
+                                            Kaip tai veikia?
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img alt="" class="photo" src="images/eeeee.png">
+                                <div class="media-cont">
+                                    <div>
+                                        <div>
+                                            <h3>Komercinis pasiulymas per 24 val.</h3>
+                                            Sudarysim pasiūlymą, atliksime preliminarų skaičiavimą, vėliau išsamiai
+                                            išnagrinėsime jūsų projekto apimtį ir reikalavimus, kad galėtume pasiūlyti
+                                            tikslesnį
+                                            ir geriau pritaikytą sprendimą.
+                                        </div>
+                                        <br>
+                                        <a href="#" class="ext_button blue-style rounded">
+                                            <span>
+                                                Spausk čia!
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-content">
+                            <div class="cont">
+                                <div>
+                                    <h2>
+                                        Kaip tai veikia?
+                                    </h2>
+                                    High-performing software solutions that drive your business forward. Accelerate your
+                                    software development roadmap through custom engineering solutions.
+                                </div>
+                                <div class="action">
+                                    <a href="#" class="ext_button blue-style rounded">
+                                        <span>
+                                            Noriu!
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <img alt="" class="photo" src="images/ggg.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="about-us-section">
+            <section class="logo-carusel-section">
+                <div class="container">
+                    <div class="logo-carusel-container">
+                        <div class="swiper-container swiper logo-carusel">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/japonija.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/judekim.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="110" src="images/logos/sakwa.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/sherlog.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/stogu.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/topilis.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="50" src="images/logos/trakai.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/vizion.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/japonija.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/judekim.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="110" src="images/logos/sakwa.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/sherlog.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/stogu.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="120" src="images/logos/topilis.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img width="50" src="images/logos/trakai.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="images/logos/vizion.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="pure-g services-list-COLLS">
+                    <div class="pure-u-1-1 pure-u-lg-1-2">
+                        <div class="services-list-container">
+                            <div class="pure-g services-list">
+                                <div class="pure-u-1-1 pure-u-lg-1-2">
+                                    <div class="services-list-item iv">
+                                        <div class="title" style="color: #000">
+                                            Interneto svetainės
+                                        </div>
+                                        <img class="media" src="images/zicon1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="pure-u-1-1 pure-u-lg-1-2">
+                                    <div class="services-list-item ep">
+                                        <div class="title">
+                                            El. parduotuvės
+                                        </div>
+                                        <img class="media" src="images/zicon2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="pure-u-1-1 pure-u-lg-1-2">
+                                    <div class="services-list-item ma">
+                                        <div class="title">
+                                            Mobilios aplikacijos
+                                        </div>
+                                        <img class="media" src="images/zicon3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="pure-u-1-1 pure-u-lg-1-2">
+                                    <div class="services-list-item ui">
+                                        <div class="title">
+                                            UI/UX dizainas
+                                        </div>
+                                        <div style="padding: 30px 30px 0">
+                                            <img class="media" src="images/zicon4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-1 pure-u-lg-1-2" style="align-self: center">
+                        <h2 style="font-size: 60px">
+                            <span style="color: #4c6fff">Platus</span> IT paslaugų <span
+                                style="color: #4c6fff">spektras</span> už prieinamą kainą
+                        </h2>
+                        <p>
+                            Mūsų komanda kuria efektyvų darbo procesą, leidžiantį mums pasiūlyti platus IT paslaugų
+                            spektrą už prieinamą kainą. Mūsų ilgametė patirtis ir kvalifikuotų specialistų komanda
+                            leidžia
+                            mums sėkmingai įgyvendinti projektus, pradedant nuo tinklo projektavimo, serverių
+                            administravimo, duomenų bazių valdymo ir programų kūrimo. Mes pasiūlome savo klientams
+                            aukštos
+                            kokybės paslaugas, atitinkančias jų poreikius ir reikalavimus, ir taip užtikriname jų
+                            patikimumą
+                            ir ilgalaikę bendradarbiavimo perspektyvą.
+                        </p>
+                        <div>
+                            <a href="#" class="ext_button blue-style rounded">
+                                <span>
+                                    Susisiek ir rask sprendimą
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-list-section">
+            <div class="container">
+
+                <div class="project-list-container">
+                    <div class="project-list">
+                        <h2 style="font-size: 40px; text-align: center">
+                            <span style="color: #4c6fff">Mus</span> atrado
+                        </h2>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="selected">
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="selected">
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logos/japonija.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-list-cont">
+                        <div class="swiper projects">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/10/sherlog.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/trakai-visit.lt_-600x400.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/judekimlauke.lt_-600x400.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/10/sherlog.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/trakai-visit.lt_-600x400.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/judekimlauke.lt_-600x400.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/10/sherlog.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/trakai-visit.lt_-600x400.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://onlinesprendimai.lt/wp-content/uploads/2022/05/judekimlauke.lt_-600x400.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <div class="container">
+                <h2 style="font-size: 40px; text-align: center; margin-bottom: 1em">
+                    Nori <span style="color: #4c6fff">žinoti daugiau?</span>
+                </h2>
+                <div class="pure-g">
+                    <div class="pure-u-1-1 pure-u-lg-1-2">
+                        <div class="accorditions-block">
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-1 pure-u-lg-1-2">
+                        <div class="accorditions-block">
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="accord-toggler">
+                                    Duis laoreet auctor placerat mattis
+                                </a>
+                                <div class="accord">
+                                    <div>
+                                        Phasellus a lectus et ligula tincidunt fermentum. Cras malesuada sapien a urna
+                                        aliquet ultricies. Donec porta nunc odio, ac vehicula mauris lacinia a. Cras
+                                        pharetra mauris vitae metus consectetur, egestas hendrerit risus rutrum. Aenean quis
+                                        mollis felis, non vehicula libero. Integer molestie sem sit amet est aliquam, sit
+                                        amet auctor nisl venenatis. Sed tempus sapien vitae urna dapibus, et congue orci
+                                        luctus. Proin volutpat ipsum quis sapien ornare, sit amet dapibus eros sollicitudin.
+                                        Nulla facilisi. Integer vel vestibulum libero. Suspendisse potenti. Sed quis velit
+                                        quam.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="long-term-business-partner-section">
+            <div class="container">
+                <div class="long-term-business-partner-container">
+                    <h2 style="font-size: 40px; text-align: center">
+                        Ieškote <span style="color: #4c6fff">ilgalaikio partnerio</span> savo verslui?
+                    </h2>
+                    <div>
+                        Gaukite komercinį pasiulymą per 24 val.
+                    </div>
+                    <div class="action">
+                        <a href="#" class="ext_button blue-style rounded">
+                            <span>
+                                Komercinis pasiulymas
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div>
+                        <img src="images/os2-logo-tr.svg" width="160" alt="">
+                    </div>
+                    <p>
+                        Norite sužinoti daugiau apie mus ar mūsų paslaugas?
+                        <br>
+                        Susisiekite su mumis, mes mielai jums atsakysime.
+                    </p>
+                    <p>
+                        <a href="#">
+                            J. Kubiliaus g. 6, Vilnius
+                        </a>
+                        <br>
+                        <a href="#">
+                            +370 663 82929
+                        </a>
+                        <br>
+                        <a href="#">
+                            labas@onlinesprendimai.lt
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <div class="pure-g inputs-container">
+                        <div class="pure-u-1-1 pure-u-lg-1-2">
+                            <label class="simple">
+                                Vardas
+                            </label>
+                            <input type='text' name='m65244rez_vardas' id='vardas' value='' class='text' required='1'/>
+
+                        </div>
+                        <div class="pure-u-1-1 pure-u-lg-1-2">
+                            <label class="simple">
+                                Įmonės pavadinimas
+                            </label>
+
+                            <input type='text' name='m65244rez_imone' id='imone' value='' class='text'/>
+                        </div>
+                        <div class="pure-u-1-1 pure-u-lg-1-2">
+                            <label class="simple">
+                                Telefonas
+                            </label>
+                            <input type='text' name='m65244rez_telefonas' id='telefonas' value='' class='text'
+                                   pattern="^(?:8|\(?\+\)?)\d{7,}" required='1'/>
+                        </div>
+                        <div class="pure-u-1-1 pure-u-lg-1-2">
+                            <label class="simple">
+                                El. paštas
+                            </label>
+                            <input type='email' name='m65244rez_el_pastas' id='el_pastas' value='' class='email'
+                                   required='1'/>
+                        </div>
+                        <div class="pure-u-1-1">
+                            <label class="simple">
+                                Žinutė
+                            </label>
+                            <textarea name='m65244rez_pastabos' id='pastabos' class='textarea' required='1'></textarea>
+                            <input type='hidden' name='m65244rez_fiskur' id='fiskur' value='http://www.texus.lt/'/>
+                            <input type='hidden' name='m65244rez_fkforma' id='fkforma' value='Bendra'/>
+
+                        </div>
+                        <div class="pure-u-1-1 action">
+                            <div class="socials-container">
+                                <ul class="socials">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="ext_button red-style uppercase rounded">
+                                    <span>
+                                        Siųsti užklausą
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"
+        type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="libs/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="libs/t/t.min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/buildmobile.js" type="text/javascript"></script>
+<script src="js/general.js" type="text/javascript"></script>
 
 </body>
 </html>
