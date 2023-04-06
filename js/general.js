@@ -2,6 +2,7 @@ typeof plugins === "undefined" ? plugins = {
 
     init: function () {
 
+        this.cookieNotice.init()
 
     },
     swipers: {
@@ -132,7 +133,7 @@ typeof plugins === "undefined" ? plugins = {
             let id = $(el).attr('href');
             waypoints[i] = new Waypoint.Inview({
                 element: $(id)[0],
-                enter: function (direction){
+                enter: function (direction) {
 
                     if (direction == 'up') {
                         $('ul.main-menu > li').removeClass('selected');
@@ -160,9 +161,62 @@ typeof plugins === "undefined" ? plugins = {
                 if ($(window).width() < 768) {
                     position = position - 70;
                 }
-                $('html, body').animate({scrollTop: position}, 'slow');
+                $('html, body').animate({scrollTop: position}, 'slow', 'swing');
                 return false;
             }
+        })
+
+    },
+    cookieNotice: {
+
+        init: function () {
+
+            const cookie_status = localStorage.getItem('cookieNotice');
+            if (!cookie_status) {
+                plugins.cookieNotice.notice.show();
+            }
+
+            $('[data-accept]').on('click', function () {
+                plugins.cookieNotice.accept(this)
+            });
+
+        },
+        accept: function (obj) {
+
+            if ($(obj).attr('data-accept') == 'all') {
+                $('.cookies-selection input').prop("checked", true);
+            }
+            let selection = $('.cookies-selection input').serializeArray();
+            if (selection.length == 0) {
+                selection = 'only required';
+            }
+            localStorage.setItem('cookieNotice', selection);
+            plugins.cookieNotice.notice.hide();
+
+        },
+        notice: {
+
+            show: function () {
+
+                $('section.cookies').addClass('visible')
+
+            },
+            hide: function () {
+
+                $('section.cookies').removeClass('visible')
+
+            }
+
+        }
+
+    },
+    inputs: new function () {
+
+        $('[type="checkbox"], [type="radio"]').each(function (i, el) {
+
+            var type = $(el).attr('type');
+            $(el).wrap('<label class="styled_' + type + '"></label>').after('<i></i>');
+
         })
 
     }
