@@ -34,7 +34,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       }, {
         down: 'exit',
         up: 'entered',
-        offset: 100
+        offset: 200
       }, {
         down: 'exited',
         up: 'enter',

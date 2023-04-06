@@ -175,6 +175,9 @@ typeof plugins === "undefined" ? plugins = {
                     }
 
 
+                },
+                exited: function (direction) {
+
                 }
             })
         });
@@ -183,7 +186,7 @@ typeof plugins === "undefined" ? plugins = {
             e.preventDefault();
             var id = $(this).attr('href');
             if ($(id).length > 0) {
-                var position = $(id).offset().top;
+                var position = $(id).offset().top - 100;
                 if ($(window).width() < 768) {
                     position = position - 70;
                 }
