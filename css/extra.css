@@ -706,7 +706,7 @@ strong {
         bottom: 0;
         overflow: hidden;
         z-index: 1;
-        background: rgba(19, 124, 77, 0.55);
+        background: rgba(76, 111, 255, 0.15);
         opacity: 0;
         visibility: hidden;
         -webkit-transition: all ease 0.3s;

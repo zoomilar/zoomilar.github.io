@@ -1235,7 +1235,7 @@ section.cookies a:not(.ext_button):hover {
     }
 
     div.mob_nav_container div.mob-nav-top-line {
-        background: #79b215;
+        background: #6f67d8;
         display: flex;
         justify-content: space-between;
         color: #fff;
@@ -1352,13 +1352,27 @@ section.cookies a:not(.ext_button):hover {
     }
 
     ul.main-menu {
+        margin: 0;
+        display: block;
+    }
+
+    ul.main-menu > li{
         display: block;
     }
 
     ul.main-menu > li > a {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
         position: relative;
         padding: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        font-size: 22px;
+    }
+
+    ul.main-menu > li.selected > a{
+        background: #fff;
     }
 
     ul.main-menu > li > a .fa {
@@ -1609,6 +1623,10 @@ section.cookies a:not(.ext_button):hover {
 
     div.accorditions-block .accord-toggler {
         padding: 1em 1em 1em 68px;
+    }
+
+    section.long-term-business-partner-section{
+        padding: 30px 0;
     }
 
 }

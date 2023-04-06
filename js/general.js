@@ -187,7 +187,9 @@ typeof plugins === "undefined" ? plugins = {
                 if ($(window).width() < 768) {
                     position = position - 70;
                 }
-                $('html, body').animate({scrollTop: position}, 'slow', 'swing');
+                $('html, body').animate({scrollTop: position}, 'slow', 'swing', function (){
+                    $('body').removeClass('mob_menu_opened');
+                });
                 return false;
             }
         })
