@@ -63,6 +63,32 @@ typeof plugins === "undefined" ? plugins = {
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50
+                },
+                1276: {
+                    slidesPerView: 6,
+                    spaceBetween: 50
+                },
+                1500: {
+                    slidesPerView: 8,
+                    spaceBetween: 50
+                }
             }
         }),
         projects: new Swiper(".projects", {
@@ -85,7 +111,7 @@ typeof plugins === "undefined" ? plugins = {
             },
             speed: 1000,
             autoplay: {
-                delay: 3000
+                delay: 5000
             },
             pagination: {
                 el: ".project-list",

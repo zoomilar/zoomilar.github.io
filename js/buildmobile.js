@@ -74,8 +74,7 @@ var mobileModules = '';
                         class: 'mob-header-items',
                         before_content: '',
                         content: [
-                            '.langs-select',
-                            '.mob_search'
+
                         ],
                         after_content: ''
                     }
@@ -115,7 +114,7 @@ var mobileModules = '';
             });
 
             $('div.mob_nav_container ul.main-menu ul').each(function () {
-                $(this).prev('a').append('<i class="fa fa-plus"></i>')
+                $(this).prev('a').append('<i class="fal fa-plus"></i>')
             });
 
             $('div.mob_nav_container ul.main-menu .fa').parent('a').on('click', function (event) {
@@ -207,7 +206,7 @@ var mobileModules = '';
                 mobileModules.detect_smallest_rez();
             });
 
-            $('a.logo').after('<a class="smart_menu_caller"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>');
+            $('a.logo').after('<a class="smart_menu_caller"><i class="fal fa-bars"></i><i class="fal fa-times"></i></a>');
 
             $('a.smart_menu_caller').on('click', function (event) {
                 event.preventDefault();
