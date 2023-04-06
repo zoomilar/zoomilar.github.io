@@ -715,6 +715,8 @@ div.project-card .screens .smartphone img {
     display: flex;
 }
 
+.projects .swiper-slide.swiper-slide-active{}
+
 .projects .swiper-slide img {
     min-width: 100%;
 }
