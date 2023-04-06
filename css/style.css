@@ -485,7 +485,7 @@ section.faq-section > .container {
     z-index: 2;
 }
 
-div.accorditions-block{
+div.accorditions-block {
 }
 
 div.accorditions-block > div {
@@ -551,64 +551,175 @@ div.accorditions-block .accord-toggler.opened {
     color: #2d3958;
 }
 
-div.project-list-container{
+div.project-list-container {
     display: flex;
     align-items: flex-start;
 }
 
-div.project-list{
+div.project-list-aside{
     min-width: 300px;
     max-width: 300px;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 60px;
+    margin-right: 30px;
+    flex-direction: column;
 }
 
-div.project-list > div{
+div.project-list {
+    min-width: 1px;
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.project-list > div {
     display: flex;
     width: 50%;
     padding: 10px 5px 0;
 }
 
-div.project-list > div > a{
+div.project-list > div > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid transparent;
     padding: 20px;
+    height: 80px;
+    flex: auto;
+    cursor: pointer;
 }
 
 div.project-list > div.selected > a,
-div.project-list > div > a:hover{
-    border: 1px solid rgba(0, 0, 0, .3);
+div.project-list > div > a:hover {
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
-div.project-list > div > a img{
+div.project-list > div > a img {
     max-width: 100%;
+    max-height: 100%;
     height: auto;
 }
 
-div.project-list-cont{
+div.project-list-cont {
     min-width: 1px;
     flex: auto;
+}
+
+div.project-card {
+    display: flex;
+    width: 100%;
+}
+
+div.project-card .media {
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+}
+
+div.project-card .cont {
+    min-width: 210px;
+    flex-basis: 210px;
+    font-size: 16px;
+}
+
+div.project-card .cont h3{
+    font-size: 25px;
+}
+
+div.project-card .cont .status{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    font-style: italic;
+    font-size: .8em;
+}
+
+div.project-card .cont .descr{}
+
+div.project-card .cont .action{
+    margin-top: 30px;
+}
+
+div.project-card .screens {
+    min-width: 1px;
+    flex: auto;
+    display: flex;
+    position: relative;
+    background: url("../images/hhhh.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+div.project-card .screens:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+div.project-card .screens .descktop {
+    width: 57.71%;
+    height: 37.59%;
+    position: absolute;
+    left: 15.91%;
+    top: 22.75%;
+    overflow: hidden;
+}
+
+div.project-card .screens .descktop img {
+    width: 100%;
+    height: auto;
+}
+
+div.project-card .screens .descktop iframe {
+    width: 1024px;
+    height: 100%;
+}
+
+div.project-card .screens .tablet {
+    width: 24.93%;
+    height: 35.33%;
+    background: url("../images/xxxx.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 62.5%;
+    top: 38.75%;
+    padding: 2.5% 1.7% 4.6% 1.7%;
+    display: flex;
+}
+
+div.project-card .screens .tablet img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+div.project-card .screens .smartphone {
+    width: 13.38%;
+    height: 26.72%;
+    background: url("../images/xxxx.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 56%;
+    top: 53.07%;
+    padding: 2.3% .9% 3.6% .9%;
+    display: flex;
+}
+
+div.project-card .screens .smartphone img {
+    width: 100%;
+    border-radius: 2%;
 }
 
 .projects {
     width: 100%;
 }
 
-.projects .swiper-slide{
+.projects .swiper-slide {
     background: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
     display: flex;
 }
 
-.projects .swiper-slide img{
+.projects .swiper-slide img {
     min-width: 100%;
-    object-fit: cover;
 }
 
-    /*LISTS*/
+/*LISTS*/
 
 div.socials-container {
     display: flex;
@@ -731,6 +842,7 @@ ul.content-menu > li > a {
 div.inputs-container .action {
     display: flex;
     justify-content: space-between;
+    font-size: .8em;
 }
 
 div.inputs-container label {

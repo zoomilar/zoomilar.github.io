@@ -65,6 +65,7 @@ typeof plugins === "undefined" ? plugins = {
             }
         }),
         projects: new Swiper(".projects", {
+            loop: true,
             grabCursor: true,
             effect: "creative",
             creativeEffect: {
@@ -74,6 +75,27 @@ typeof plugins === "undefined" ? plugins = {
                 },
                 next: {
                     translate: ["100%", 0, 0],
+                },
+            },
+            on: {
+                beforeInit: function () {
+                    (typeof pagination_el === "undefined") ? pagination_el = $('.project-list').clone() : '';
+                }
+            },
+            speed: 1000,
+            autoplay: {
+                delay: 3000
+            },
+            pagination: {
+                el: ".project-list",
+                clickable: true,
+                bulletClass: 'custom-bullet',
+                bulletActiveClass: 'selected',
+                renderBullet: function (index, className) {
+                    let ggg = pagination_el.children('div')[index];
+                    ggg.classList.add(className);
+                    let miau = ggg.outerHTML
+                    return miau;
                 },
             },
         })
@@ -101,6 +123,47 @@ typeof plugins === "undefined" ? plugins = {
             $(this).toggleClass('opened');
             $(this).next('.accord').toggle('slow');
         });
+
+    },
+    nav: new function () {
+
+        let waypoints = [];
+        $('ul.main-menu a').each(function (i, el) {
+            let id = $(el).attr('href');
+            waypoints[i] = new Waypoint.Inview({
+                element: $(id)[0],
+                enter: function (direction){
+
+                    if (direction == 'up') {
+                        $('ul.main-menu > li').removeClass('selected');
+                        $('ul.main-menu > li > a[href="#' + this.element.id + '"]').parent('li').addClass('selected')
+                    }
+
+                },
+                exit: function (direction) {
+
+                    if (direction == 'down') {
+                        $('ul.main-menu > li').removeClass('selected');
+                        $('ul.main-menu > li > a[href="#' + this.element.id + '"]').parent('li').addClass('selected')
+                    }
+
+
+                }
+            })
+        });
+
+        $(document).on('click', '.main-menu a, .logo', function (e) {
+            e.preventDefault();
+            var id = $(this).attr('href');
+            if ($(id).length > 0) {
+                var position = $(id).offset().top;
+                if ($(window).width() < 768) {
+                    position = position - 70;
+                }
+                $('html, body').animate({scrollTop: position}, 'slow');
+                return false;
+            }
+        })
 
     }
 } : false;
