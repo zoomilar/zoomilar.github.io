@@ -583,7 +583,7 @@ div.project-list > div > a {
     align-items: center;
     justify-content: center;
     border: 1px solid transparent;
-    padding: 20px;
+    padding: 15px;
     height: 80px;
     flex: auto;
     cursor: pointer;

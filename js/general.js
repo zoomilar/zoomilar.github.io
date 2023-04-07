@@ -97,11 +97,12 @@ typeof plugins === "undefined" ? plugins = {
             effect: "creative",
             creativeEffect: {
                 prev: {
-                    shadow: true,
-                    translate: [0, 0, -400],
+                    translate: [0, 0, -800],
+                    rotate: [180, 0, 0],
                 },
                 next: {
-                    translate: ["100%", 0, 0],
+                    translate: [0, 0, -800],
+                    rotate: [-180, 0, 0],
                 },
             },
             on: {
